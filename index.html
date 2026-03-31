@@ -6,48 +6,60 @@
   <title>Cleo @ 23</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="min-h-screen bg-gradient-to-br from-sky-100 via-blue-50 to-cyan-100 flex items-center justify-center p-4 sm:p-6">
-  <div class="max-w-2xl w-full bg-white/90 backdrop-blur rounded-3xl shadow-2xl border border-sky-200 overflow-hidden">
-    <div class="bg-sky-400 p-6 sm:p-8 text-center text-white relative">
-      <div class="absolute top-3 left-3 sm:top-4 sm:left-4 text-2xl sm:text-3xl">🎈</div>
-      <div class="absolute top-3 right-3 sm:top-4 sm:right-4 text-2xl sm:text-3xl">🎉</div>
-      <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-wide">You're Invited!</h1>
-      <p class="mt-3 text-base sm:text-lg">hi sister! 🤩</p>
+<body class="min-h-screen bg-gradient-to-br from-sky-100 via-blue-50 to-cyan-100 flex items-center justify-center p-3">
+  <div class="max-w-xl w-full bg-white/90 backdrop-blur rounded-2xl shadow-xl border border-sky-200 overflow-hidden">
+    <!-- Header -->
+    <div class="bg-sky-400 px-4 py-5 sm:px-6 sm:py-6 text-center text-white relative">
+      <div class="absolute top-2 left-2 text-xl sm:text-2xl">🎈</div>
+      <div class="absolute top-2 right-2 text-xl sm:text-2xl">🎉</div>
+      <h1 class="text-2xl sm:text-3xl md:text-4xl font-extrabold tracking-wide">You're Invited!</h1>
+      <p class="mt-2 text-sm sm:text-base">hi sister! 🤩</p>
     </div>
 
-    <div class="p-5 sm:p-8 text-center">
-      <h2 class="text-2xl sm:text-3xl font-bold text-sky-600">23rd</h2>
-      <p class="mt-4 text-gray-600 text-base sm:text-lg">are you free on april 12 (sunday)? i’m planning to have an early birthday celebration since april 14 falls on a tuesday (not slay 😭). i’d love to invite you for dinner—or maybe in the afternoon—at Tablo Kitchen.</p>
+    <!-- Content -->
+    <div class="px-4 py-5 sm:px-6 sm:py-6 text-center">
+      <h2 class="text-xl sm:text-2xl font-bold text-sky-600">23rd</h2>
+      <p class="mt-3 text-gray-600 text-sm sm:text-base leading-relaxed">
+        are you free on april 12 (sunday)? i’m planning to have an early birthday celebration since april 14 falls on a tuesday (not slay 😭). i’d love to invite you for dinner—or maybe in the afternoon—at Tablo Kitchen.
+      </p>
 
-      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-8">
-        <div class="bg-sky-50 rounded-2xl p-5 shadow-sm">
-          <p class="text-2xl">📅</p>
-          <h3 class="font-semibold text-sky-700 mt-2">Date</h3>
-          <p class="text-gray-600">April 12, 2026 (Sunday)</p>
+      <!-- Info Cards -->
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 mt-5">
+        <div class="bg-sky-50 rounded-xl p-3 shadow-sm">
+          <p class="text-xl">📅</p>
+          <h3 class="font-semibold text-sky-700 text-sm mt-1">Date</h3>
+          <p class="text-gray-600 text-xs sm:text-sm">April 12, 2026</p>
         </div>
-        <div class="bg-sky-50 rounded-2xl p-5 shadow-sm">
-          <p class="text-2xl">⏰</p>
-          <h3 class="font-semibold text-sky-700 mt-2">Time</h3>
-          <p class="text-gray-600">Lunch or Dinner</p>
+        <div class="bg-sky-50 rounded-xl p-3 shadow-sm">
+          <p class="text-xl">⏰</p>
+          <h3 class="font-semibold text-sky-700 text-sm mt-1">Time</h3>
+          <p class="text-gray-600 text-xs sm:text-sm">Lunch or Dinner</p>
         </div>
-        <div class="bg-sky-50 rounded-2xl p-5 shadow-sm">
-          <p class="text-2xl">📍</p>
-          <h3 class="font-semibold text-sky-700 mt-2">Venue</h3>
-          <p class="text-gray-600">Tablo Kitchen</p>
+        <div class="bg-sky-50 rounded-xl p-3 shadow-sm">
+          <p class="text-xl">📍</p>
+          <h3 class="font-semibold text-sky-700 text-sm mt-1">Venue</h3>
+          <p class="text-gray-600 text-xs sm:text-sm">Tablo Kitchen</p>
         </div>
       </div>
 
-      <button id="rsvpBtn" class="mt-8 w-full sm:w-auto px-6 py-3 bg-sky-500 hover:bg-sky-600 text-white font-semibold rounded-full shadow-lg transition duration-300">
+      <!-- Button -->
+      <button id="rsvpBtn" class="mt-6 w-full sm:w-auto px-5 py-2.5 text-sm sm:text-base bg-sky-500 hover:bg-sky-600 text-white font-semibold rounded-full shadow-md transition">
         Yes or No?
       </button>
     </div>
   </div>
 
   <!-- Modal -->
-  <div id="modal" class="fixed inset-0 bg-black/40 hidden items-center justify-center p-4 z-50">
-    <div class="bg-white rounded-3xl shadow-2xl p-6 sm:p-8 max-w-md w-full text-center">
-      <h3 class="text-2xl font-bold text-sky-600">🎂 so... are you free?</h3>
-      <p class="mt-3 text-gray-600">yes or no, hmu sa messenger and tell me. if you can make it, great! see you! 🙂‍↕️</p>
+  <div id="modal" class="fixed inset-0 bg-black/40 hidden items-center justify-center p-3 z-50">
+    <div class="bg-white rounded-2xl shadow-xl px-5 py-6 max-w-sm w-full text-center">
+      <h3 class="text-xl sm:text-2xl font-bold text-sky-600">🎂 so... are you free?</h3>
+      <p class="mt-2 text-gray-600 text-sm sm:text-base">
+        yes or no, hmu sa messenger and tell me. if you can make it, great! see you! 🙂‍↕️
+      </p>
+
+      <button id="closeModal" class="mt-5 px-5 py-2 text-sm sm:text-base bg-sky-500 hover:bg-sky-600 text-white rounded-full transition">
+        Close
+      </button>
     </div>
   </div>
 
@@ -68,15 +80,18 @@
       });
     });
 
-    closeModal.addEventListener('click', () => {
+    function closeModalAndStopMusic() {
       modal.classList.add('hidden');
       modal.classList.remove('flex');
-    });
+      music.pause();
+      music.currentTime = 0;
+    }
+
+    closeModal.addEventListener('click', closeModalAndStopMusic);
 
     modal.addEventListener('click', (e) => {
       if (e.target === modal) {
-        modal.classList.add('hidden');
-        modal.classList.remove('flex');
+        closeModalAndStopMusic();
       }
     });
   </script>
